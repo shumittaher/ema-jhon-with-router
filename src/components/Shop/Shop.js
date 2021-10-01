@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
-import { addToDb, getStoredCart, deleteFromDb } from '../../utilities/fakedb';
+import { addToDb} from '../../utilities/fakedb';
 import useProducts from './../../hooks/userProducts';
 
 import useCart from './../../hooks/userCarts';
 import './Shop.css';
 
 const Shop = () => {
-    const [products, setProducts] = useProducts([]);
+    const [products ] = useProducts([]);
     const [cart, setCart] = useCart(products);
     // products to be rendered on the UI
     const [displayProducts, setDisplayProducts] = useState([]);

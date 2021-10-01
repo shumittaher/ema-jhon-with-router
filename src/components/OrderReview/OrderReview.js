@@ -3,7 +3,7 @@ import useProducts from './../../hooks/userProducts';
 import useCart from './../../hooks/userCarts';
 import Cart from './../Cart/Cart';
 import Reviewitem from '../Reviewitem/Reviewitem';
-import { addToDb, getStoredCart, deleteFromDb } from '../../utilities/fakedb';
+import { deleteFromDb } from '../../utilities/fakedb';
 
 
 const OrderReview = () => {
