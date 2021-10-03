@@ -5,12 +5,14 @@ import Shop from './components/Shop/Shop';
 import OrderReview from './components/OrderReview/OrderReview';
 import Inventory from './components/Inventory/Inventory';
 import NotFound from './components/NotFound/NotFound';
+import PlaceOrder from './components/PlaceOrder/PlaceOrder';
 
 function App() {
   return (
     <div>
-      <Header></Header>
       <Router>
+      <Header></Header>
+      
         <Switch>
           <Route exact path="/">
             <Shop></Shop>
@@ -25,6 +27,10 @@ function App() {
 
           <Route path="/inventory">
             <Inventory></Inventory>
+          </Route>
+
+          <Route path="/placeOrder">
+            <PlaceOrder></PlaceOrder>
           </Route>
           <Route path="*">
             <NotFound></NotFound>
