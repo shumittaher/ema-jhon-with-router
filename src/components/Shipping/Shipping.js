@@ -7,7 +7,7 @@ const Shipping = () => {
 
     const { user } = useAuth()
     
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit,  formState: { errors } } = useForm();
     const onSubmit = data => {
         console.log(data)
     };
